@@ -16,8 +16,6 @@ function App() {
   const headers = {
     'dev-email-address': 'luannpraxedes@gmail.com'
   };
-  
-  const genres = [...new Set(gameData.map(game => game.genre))];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -40,11 +38,17 @@ function App() {
 
     fetchData();
   }, []);
+  
+  const genres = gameData.length > 0 
+    ? [...new Set(gameData.map(game => game.genre))] 
+    : null
 
-  const filteredData = gameData.filter(game =>
-    (selectedGenre === '' || game.genre === selectedGenre) &&
-    game.title.includes(searchFilter)
-  );
+  const filteredData = gameData.length > 0
+  ? gameData.filter(game =>
+      (selectedGenre === '' || game.genre === selectedGenre) &&
+      game.title.includes(searchFilter)
+    )
+  : [];
 
   if (isLoading) {
     return (
