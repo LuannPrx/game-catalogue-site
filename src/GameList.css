@@ -1,0 +1,58 @@
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(max(270px, calc((100% - 40px) / 3)), 1fr));
+  gap: 20px;
+}
+
+.game-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+  color: #fff;
+  border-radius: 2%;
+  background-color: #2b2d31;
+}
+
+.game-item img {
+  max-width: 100%;
+  border-radius: 1%;
+  height: auto;
+}
+
+.game-summary {
+  color: #fff;
+}
+
+.game-summary p {
+  color: #d9dbde;
+}
+
+.game-tags {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+
+.tag {
+  flex: 1;
+  padding-right: 2%;
+  padding-left: 2%;
+  background-color: #313338;
+  border-radius: 0.7em;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+
+.tag span {
+  font-size: small;
+  color: rgb(160, 159, 159);
+}
+
+.platform-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+  
