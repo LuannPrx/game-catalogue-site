@@ -20,18 +20,39 @@
   display: flex;
   top: 0;
   background-color: #313338;
-  padding: 0.1%;
+  padding: 5px;
   text-align: start;
+  justify-content: space-between;
+  align-items: center;
+  overflow: scroll;
+}
+
+.page-header button{
+  font-size: small;
+  color: #d9dbde;
+  background-color: transparent;
+}
+
+.page-header button:hover{
+  font-size: small;
+  color: #d9dbde;
+  cursor: pointer;
+  text-decoration: underline;
+  background-color: transparent;
 }
 
 .page-header input {
   border: 0;
   margin-left: 5%;
   background-color: #313338;
+  color: white;
+  max-width: 20vw;
 }
 
 .page-header select {
   border: 0;
   margin-left: 5%;
   background-color: #313338;
+  color: white;
 }
+

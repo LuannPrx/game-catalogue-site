@@ -1,0 +1,88 @@
+.return-button {
+    color: #d9dbde;
+    background-color: transparent;
+    align-self: flex-start;
+}
+
+.container {
+    height: 50vh;
+    width: 50vh;
+    max-width: 80vw;
+    background-color: #2b2d31;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.tab-container {
+    background-color: black;
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-container button:focus {
+    outline:none !important;
+}
+
+.tab {
+    flex: 1;
+    background-color: #575a60;
+    color: white;
+    border-radius: 0;
+}
+
+.tab-active {
+    flex: 1;
+    background-color: #2b2d31;
+    color: white;
+    border-radius: 0;
+}
+
+.tab:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.form-container {
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: none;
+}
+
+.active {
+    color: white;
+    display: block;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+
+.error-message {
+    color: red;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+
+.active button {
+    background-color: dodgerblue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}

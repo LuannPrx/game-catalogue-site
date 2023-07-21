@@ -24,6 +24,47 @@
   color: #fff;
 }
 
+.game-icons {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.game-icons button {
+  background-color: transparent;
+}
+
+.game-rating{
+  color: gold;
+  font-size: 18px;
+}
+
+.game-rating button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+.on {
+  color: gold;
+}
+.off {
+  color: #ccc;
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: #ccc; 
+  transition: transform 0.3s, color 0.3s;
+}
+
+.favorite .heart-icon {
+  color: #ff0000;
+  transform: scale(1.2);
+}
+
 .game-summary p {
   color: #d9dbde;
 }
